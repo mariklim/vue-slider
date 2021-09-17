@@ -20,12 +20,9 @@ const app = new Vue({
         prevBtn: function(){
             if(this.indexImg > 0 ||this.indexImg >= this.images.length - 1){
                 this.indexImg--;
-            }
+            }else if(this.indexImg = -1){
+                this.indexImg = this.images.length - 1;
+            }   
         }
     },
-    //     pointerActiv:function(){
-    //         if(this.indexImg == indexPointer){
-    //             color = "red";
-    //         }
-    // },
 })

@@ -8,13 +8,18 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- / Font awesome -->
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 
+    <!-- /Google fonts -->
 
     <link rel="stylesheet" href="style.css">
     <title>Vue Slider</title>
 </head>
 
 <body>
-    <h1>La dolce vita con VueJS</h1>
+    <h1>La dolce vita con <span>Vue</span><span>.JS</span></h1>
     <div class="container" id="root">
         <div class="carousel">
             <div class="prev">
@@ -23,7 +28,7 @@
             <div class="photos-carousel">
                 <img :src = "images[indexImg]">
                 <div class="pointer">
-                    <i class="fas fa-circle" v-for= "(image,index) in images" :class = "indexImg == index ? 'pointer-activ': null"></i>
+                    <i class="fas fa-circle" v-for= "(image,index) in images" :class = "indexImg == index ? 'activ': null"></i>
                 </div>
             </div>
             <div class="next">
