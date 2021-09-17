@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.prev i, .next i{
+    font-size: 50px;
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.pointer{
+    background-color: rgba(103, 108, 109, 0.698);
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
