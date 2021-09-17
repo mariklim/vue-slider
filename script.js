@@ -6,10 +6,13 @@ const app = new Vue({
             "https://image.freepik.com/free-photo/front-view-delicious-round-pie-sweet-bake-dark-background-biscuit-dough-pie-cake-sugar-sweet-tea_140725-115655.jpg",
             "https://image.freepik.com/free-photo/front-view-yummy-apple-pie-sweet-baked-inside-pan-white-desk-pie-cake-biscuit-sweet-sugar-bake_140725-39947.jpg"
         ],
-       indexImg : 0,
-      
+        indexImg: 0,
+
     },
-    methods:{
-        
+    methods: {
+        nextBtn: function(){
+            this.indexImg++;
+        }
+
     },
 })
