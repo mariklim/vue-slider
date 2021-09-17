@@ -27,6 +27,10 @@ h1 span:last-child{
     color: rgb(108, 48, 143);
 }
 
+.prev i:hover, .next i:hover{
+    color: rgb(188, 137, 218);
+}
+
 .container{
     display: flex;
     align-items: center;
