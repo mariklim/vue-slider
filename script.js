@@ -15,9 +15,12 @@ const app = new Vue({
                 this.indexImg = 0;
             }else{
                 this.indexImg++;
+            }   
+        },
+        prevBtn: function(){
+            if(this.indexImg > 0 ||this.indexImg >= this.images.length - 1){
+                this.indexImg--;
             }
-            
         }
-
     },
 })
