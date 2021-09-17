@@ -11,7 +11,12 @@ const app = new Vue({
     },
     methods: {
         nextBtn: function(){
-            this.indexImg++;
+            if(this.indexImg >= this.images.length - 1){
+                this.indexImg = 0;
+            }else{
+                this.indexImg++;
+            }
+            
         }
 
     },
