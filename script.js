@@ -1,15 +1,15 @@
-// https://www.freepik.com/free-photo/homemade-newyork-cheesecake-with-frozen-berries-mint-healthy-organic-dessert-top-view_8886135.htm#page=1&query=cheese%20cake&position=16
-
-// https://www.freepik.com/free-photo/front-view-delicious-round-pie-sweet-bake-dark-background-biscuit-dough-pie-cake-sugar-sweet-tea_16907804.htm#page=1&query=pumpkin%20cake&position=0
-
-//https://www.freepik.com/free-photo/homemade-delicious-apple-pie-with-jam_15332245.htm#page=1&query=apple%20cake&position=2
-
 const app = new Vue({
     el: '#root',
     data: {
+        images: [
+            "https://image.freepik.com/free-photo/homemade-newyork-cheesecake-with-frozen-berries-mint-healthy-organic-dessert-top-view_114579-9844.jpg",
+            "https://image.freepik.com/free-photo/front-view-delicious-round-pie-sweet-bake-dark-background-biscuit-dough-pie-cake-sugar-sweet-tea_140725-115655.jpg",
+            "https://image.freepik.com/free-photo/front-view-yummy-apple-pie-sweet-baked-inside-pan-white-desk-pie-cake-biscuit-sweet-sugar-bake_140725-39947.jpg"
+        ],
+       indexImg : 0,
       
     },
     methods:{
-       
+        
     },
-  })
+})
