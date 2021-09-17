@@ -23,4 +23,9 @@ const app = new Vue({
             }
         }
     },
+    //     pointerActiv:function(){
+    //         if(this.indexImg == indexPointer){
+    //             color = "red";
+    //         }
+    // },
 })

@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <h1>La dolce vita con VueJS</h1>
     <div class="container" id="root">
         <div class="carousel">
             <div class="prev">
@@ -22,9 +23,7 @@
             <div class="photos-carousel">
                 <img :src = "images[indexImg]">
                 <div class="pointer">
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
-                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle" v-for= "(image,index) in images" :class = "indexImg == index ? 'pointer-activ': null"></i>
                 </div>
             </div>
             <div class="next">
