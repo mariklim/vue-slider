@@ -10,6 +10,7 @@ const app = new Vue({
             "https://image.freepik.com/free-photo/front-view-sweet-pancakes-tower-arrangement_23-2148654085.jpg",
         ],
         indexImg: 0,
+        autoplayID: null,
 
     },
     methods: {
@@ -26,6 +27,16 @@ const app = new Vue({
             }else if(this.indexImg = -1){
                 this.indexImg = this.images.length - 1;
             }   
-        }
+        },
+        // funzione di autoplay per slider
+        startAutoplay: function() {
+			this.autoplayID = setInterval(this.nextBtn, 2000);
+		},
+		stopAutoplay: function() {
+			if(this.autoplayID != null) {
+				clearInterval(this.autoplayID);
+			}
+		},
     },
+    
 })
